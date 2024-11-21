@@ -21,6 +21,7 @@ margin-top:100px;
 display: flex;
 margin-top: -100px;
 background-color: #ffff;
+box-shadow: 1px 3px 6px rgba(104, 102, 102, 0.2);
 padding: 10px;
 gap: 2rem;
 }
@@ -39,16 +40,38 @@ font-family: 'vazir';
 color: #989a9b;
 }
 .navLinkAfter::after{
-    content: جدید;
+content: جدید;
 }
 .downIcon{
 font-size: 12px;
 padding-right: 5px;
 }
-
-
+.searchIcon{
+font-size: 20px;
+padding-right:12px;
+color: #989a9b;
+}
+.searchItem{
+border-left: 1px #989a9b;
+}
+/* end of desktop navigation*/
+/* start coding phone navigation */
+.navMenupPhone{
+background-color: #ffff;
+margin-right: 10px;
+width: 250px;
+height: 350px;
+display: none;
+}
+.navLinkPhone{
+font-family: 'vazir';
+color: #989a9b;
+font-size:15px;
+padding-right:25px;
+margin-top: 10px;
+}
+/* end coding phone navigation */
 /* fonts  */
-
 @font-face {
 font-family: 'vazir';
 src: url(../fonts/vazir-Black.woff);
