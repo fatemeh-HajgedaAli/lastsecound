@@ -1,0 +1,59 @@
+/* start codding */
+body{
+margin: 0 auto;
+padding: 0;
+}
+a,ul,li,ol{
+list-style-type: none;
+outline: none;
+text-decoration: none;
+}
+/* start styling desktop navigation */
+.topHead{
+background-image: url("./lastsecondPic/world\ map.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+margin-top:100px;
+}
+.menuTop{
+display: flex;
+margin-top: -100px;
+background-color: #ffff;
+padding: 10px;
+gap: 2rem;
+}
+.imgLogo{
+width: 200px;
+padding-right: 50px;
+}
+.navMenu{
+display: flex;
+flex-direction: row;
+gap: 1.7rem;
+}
+.navLink{
+font-size: 15px;
+font-family: 'vazir';
+color: #989a9b;
+}
+.navLinkAfter::after{
+    content: جدید;
+}
+.downIcon{
+font-size: 12px;
+padding-right: 5px;
+}
+
+
+/* fonts  */
+
+@font-face {
+font-family: 'vazir';
+src: url(../fonts/vazir-Black.woff);
+}
+@font-face {
+font-family: 'vazir';
+src: url(../fonts/vazir-Black.woff);
+}
