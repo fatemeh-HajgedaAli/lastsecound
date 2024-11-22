@@ -8,6 +8,13 @@ list-style-type: none;
 outline: none;
 text-decoration: none;
 }
+.container {
+width: 100%;
+padding-left:1rem;
+padding-right: 1rem;
+margin-left:-1rem;
+margin-right:-1rem;
+}
 /* start styling desktop navigation */
 .topHead{
 background-image: url("./lastsecondPic/world\ map.png");
@@ -31,6 +38,8 @@ padding-right: 50px;
 }
 .navMenu{
 display: flex;
+justify-content: center;
+align-items: baseline;
 flex-direction: row;
 gap: 1.7rem;
 }
@@ -39,8 +48,21 @@ font-size: 15px;
 font-family: 'vazir';
 color: #989a9b;
 }
+.navLink:hover , .downIcon:hover{
+color: coral;
+transition: all 250ms ease-in-out;
+}
 .navLinkAfter::after{
-content: جدید;
+content: "جدید";
+display: flex;
+position: absolute;
+text-align: center;
+background-color: crimson;
+padding: 0 10px;
+top:3px;
+margin-right: 40px;
+border-radius: 5px;
+color: #ffff;
 }
 .downIcon{
 font-size: 12px;
@@ -53,6 +75,27 @@ color: #989a9b;
 }
 .searchItem{
 border-left: 1px #989a9b;
+}
+.leftMenu{
+display: flex;
+justify-content: center;
+align-items: baseline;
+float: left;
+margin-left: 70px;
+margin-top: -55px;
+font-size: 15px;
+gap: 1rem;
+font-family: 'vazir';
+color: #989a9b;
+}
+.searchIcon{
+padding-left: 1px;
+}
+.SignIn{
+border-right: 1px solid #989a9b;
+padding-right: 10px;
+color:coral;
+
 }
 /* end of desktop navigation*/
 /* start coding phone navigation */
@@ -71,6 +114,41 @@ padding-right:25px;
 margin-top: 10px;
 }
 /* end coding phone navigation */
+/* start title part */
+.titlePart{
+display: flex;
+}
+.titel{
+display: flex;
+gap: 1rem;
+margin-right:100px;
+margin-top: 100px;
+font-family: 'vazir';
+color: #333;
+font-size: 38px;
+}
+.lastSecoundText{
+color:coral; 
+}
+.titel::before{
+content: "";
+background-color: #FFCCBC;
+border-radius: 35px 0 0 35px;
+display: inline-block;
+height: 70px;
+width: 35px;
+position:absolute;
+}
+.imagePart{
+display: flex;
+gap: 2rem;
+margin-right: 220px;
+margin-top: 120px;
+}
+.imageTop{
+border-radius: 100px;
+border: 13px solid #989a9b;
+}
 /* fonts  */
 @font-face {
 font-family: 'vazir';
@@ -79,4 +157,24 @@ src: url(../fonts/vazir-Black.woff);
 @font-face {
 font-family: 'vazir';
 src: url(../fonts/vazir-Black.woff);
+}
+
+/* responsive Part */
+
+@media screen and (max-width:578px){
+
+}
+@media screen and (max-width:778){
+    
+}
+@media screen and (min-width:992){
+.navMenu{
+display: none;
+}  
+.navMenupPhone{
+ display: inline-block;
+}
+}
+@media screen and (max-width:1200px){
+    
 }
