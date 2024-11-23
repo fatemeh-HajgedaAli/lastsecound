@@ -113,10 +113,19 @@ font-size:15px;
 padding-right:25px;
 margin-top: 10px;
 }
+.list{
+display: block;
+position: absolute;
+left: 61px;
+top: 12px;
+font-size: 42px;
+color: coral;
+}
 /* end coding phone navigation */
 /* start title part */
 .titlePart{
 display: flex;
+z-index: 10;
 }
 .titel{
 display: flex;
@@ -126,6 +135,7 @@ margin-top: 100px;
 font-family: 'vazir';
 color: #333;
 font-size: 38px;
+
 }
 .lastSecoundText{
 color:coral; 
@@ -161,20 +171,17 @@ src: url(../fonts/vazir-Black.woff);
 
 /* responsive Part */
 
-@media screen and (max-width:578px){
-
-}
-@media screen and (max-width:778){
-    
-}
-@media screen and (min-width:992){
-.navMenu{
-display: none;
-}  
+@media screen and (max-width:992px){
+  .navMenu , .leftMenu{
+    display: none;
+  }  
 .navMenupPhone{
- display: inline-block;
-}
-}
-@media screen and (max-width:1200px){
-    
+display: none;
+transition: all 350ms ease-in-out;
+  }
+  .imagePart{
+    flex-direction: column;
+    width: 220px;
+    margin-left: 100px;
+  }
 }
